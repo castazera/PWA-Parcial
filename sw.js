@@ -1,10 +1,10 @@
 self.addEventListener('install', event => {
     console.log('Service worker instalado');
     event.waitUntil(
-        caches.open('v25').then(cache => {
+        caches.open('v60').then(cache => {
             return cache.addAll([
                 '/',
-               ' /index.html',
+                '/index.html',
                 '/style/style.css',
                 '/js/main.js',
                 '/img/android-chrome-192x192.png',
@@ -22,7 +22,7 @@ self.addEventListener('activate', event => {
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames.filter(cacheName => {
-                    return cacheName !== 'v25';
+                    return cacheName !== 'v60';
                 }).map(cacheName => {
                     return caches.delete(cacheName);
                 })

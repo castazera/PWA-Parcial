@@ -2,7 +2,6 @@ let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
-
     deferredPrompt = e;
 
     let botonInstalar = document.getElementById('install');
@@ -23,6 +22,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
     });
 });
 
+// Asegúrate de que el botón se oculte si la aplicación ya está instalada
 window.addEventListener('appinstalled', () => {
     console.log('La aplicación fue instalada.');
+    let botonInstalar = document.getElementById('install');
+    botonInstalar.hidden = true;
+    let textoBoton = document.getElementById('e-text');
+    textoBoton.textContent = 'La PWA ya se encuentra instalada en tu dispositivo.';
 });

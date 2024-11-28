@@ -2,16 +2,14 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #f4f4f4;;
-    margin: 0;
-    padding:20px;
+    margin:  0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+main{
+    height: 80vh;
 }
 
 .todo-item {
@@ -34,4 +32,44 @@ body {
 
 .delete-btn {
     margin-left: 10px;
+}
+
+.container-2{
+    display: flex;
+    justify-content: center ;
+}
+
+.install{
+    margin-right: 30%;
+}
+
+footer{
+    height: 20vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.share{
+    margin-top: 5%;
+}
+
+.delete{
+    margin-right: 10px;
+}
+
+.info-container {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border: 1px solid #dee2e6; /* Borde gris claro */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-top: 20px; /* Espacio superior */
+    padding: 20px; /* Espaciado interno */
+}
+
+.info-container p {
+    margin: 0; /* Eliminar márgenes por defecto */
+    font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+    color: #343a40; /* Color de texto oscuro */
 }

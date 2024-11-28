@@ -20,9 +20,16 @@
     <div class="container">
         <h1 class="mt-4">Bienvenido a mi PWA</h1>
         <h2 class="mb-4">To do List</h2>
-        
-        <button id="install" class="btn btn-primary mb-3" hidden>Install</button>
-        <button id="notificar">Activar notificaciones</button>
+        <div class="container-2">
+        <div class="install">
+            <p id="e-text">¿Querés instalar la aplicación?</p>
+            <button id="install" class="btn btn-primary mb-3">Oprime aquí</button>
+        </div>
+        <div>
+            <p>¿Querés recibir notificaciones?</p>
+        <button id="notificar" class="btn btn-primary mb-3">Activar notificaciones</button>
+        </div>
+    </div>
 
         <div class="card">
             <div class="card-body">
@@ -38,8 +45,21 @@
                 </ul>
             </div>
         </div>
-        <div id="map" style="height: 400px; width: 100%;"></div>
+        <button onclick="compartirLista()" class="btn btn-primary mb-3 share">Compartir mi lista</button>
+        <div class="info-container mt-4 p-3 border rounded bg-light text-center">
+            <p><strong>Si tenés dudas de, o querés saber, como implementar este listador de tareas para tu dia a dia</strong></p>
+            <p><strong>¡Encontranos aca!</strong></p>
+        <div id="map" style="height: 300px; width: 100%; margin-top:20px;"></div>
+    </div>
     </div>
 </main>
+<footer>
+    <div class="sticky-bottom">
+        <div class="card">
+        <div class="card-body text-center" style="margin-top: auto;">
+            <span class="card-title">Web realizada por Brian Fernandez & Bruno de Renzis</span>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

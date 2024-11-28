@@ -1,11 +1,11 @@
 function initMap(){
 
 
-    let chicago = { lat: 41.85, lng: -87.65};
+    let bsas = { lat: -34.6037, lng: -58.3816 };
 
     let map = new google.maps.Map(document.getElementById('map'),
     { zoom: 15,
-       center: chicago
+       center: bsas
     }
     );
 
